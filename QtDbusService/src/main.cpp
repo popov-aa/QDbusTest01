@@ -26,7 +26,7 @@ int main( int argc, char * argv[] )
     }
 
     Service service;
-    RouteVisibilityAdaptor routeVisibilityAdaptor( &service );
+    RouteVisibility1Adaptor RouteVisibility1Adaptor( &service );
     if ( !QDBusConnection::sessionBus().registerObject( "/", &service ) ) {
         qCCritical( logMain ) << "Cannot register object.";
         return 3;

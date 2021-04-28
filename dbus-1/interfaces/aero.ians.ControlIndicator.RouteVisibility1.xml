@@ -2,7 +2,7 @@
     "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
     "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd" >
 <node xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
-  <interface name="aero.ians.ControlIndicator.RouteVisibility">
+  <interface name="aero.ians.ControlIndicator.RouteVisibility1">
     <method name="get">
       <arg name="routeId" direction="in" type="t">
         <doc:doc><doc:summary>Id of route</doc:summary></doc:doc>

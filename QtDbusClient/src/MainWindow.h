@@ -1,7 +1,7 @@
 #pragma once
 
 class QDBusServiceWatcher;
-class AeroIansControlIndicatorRouteVisibilityInterface;
+class AeroIansControlIndicatorRouteVisibility1Interface;
 
 #include <QMainWindow>
 
@@ -34,5 +34,5 @@ private:
 private:
     Ui::MainWindow * ui;
     QDBusServiceWatcher * m_serviceWatcher;
-    AeroIansControlIndicatorRouteVisibilityInterface * m_routeVisibilityInterface;
+    AeroIansControlIndicatorRouteVisibility1Interface * m_routeVisibilityInterface;
 };

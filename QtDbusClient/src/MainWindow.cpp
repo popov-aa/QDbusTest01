@@ -39,12 +39,12 @@ void MainWindow::serviceRegistered( const QString & service )
 {
     if ( service == SERVICE_NAME ) {
         removeInterface();
-        m_routeVisibilityInterface = new AeroIansControlIndicatorRouteVisibilityInterface(
+        m_routeVisibilityInterface = new AeroIansControlIndicatorRouteVisibility1Interface(
           SERVICE_NAME, "/", QDBusConnection::sessionBus(), this );
         if ( m_routeVisibilityInterface->isValid() ) {
             connect(
               m_routeVisibilityInterface,
-              &AeroIansControlIndicatorRouteVisibilityInterface::changed,
+              &AeroIansControlIndicatorRouteVisibility1Interface::changed,
               this,
               [this]( qulonglong routeId, bool visibility ) {
                   log(
