@@ -1,0 +1,41 @@
+<!DOCTYPE node PUBLIC
+    "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+    "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd" >
+<node xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
+  <interface name="aero.ians.ControlIndicator.RouteVisibility">
+    <method name="get">
+      <arg name="routeId" direction="in" type="t">
+        <doc:doc><doc:summary>Id of route</doc:summary></doc:doc>
+      </arg>
+      <arg name="visibility" direction="out" type="b">
+        <doc:doc><doc:summary>Visibility of route</doc:summary></doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>
+            Get visibility of route.
+          </doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+    <method name="set">
+      <arg name="routeId" direction="in" type="t">
+        <doc:doc><doc:summary>Id of route</doc:summary></doc:doc>
+      </arg>
+      <arg name="visibility" direction="in" type="b">
+        <doc:doc><doc:summary>Visibility of route</doc:summary></doc:doc>
+      </arg>
+      <doc:doc>
+        <doc:description>
+          <doc:para>
+            Set visibility of route.
+          </doc:para>
+        </doc:description>
+      </doc:doc>
+    </method>
+    <signal name="changed">
+        <arg name="routeId" type="t"/>
+        <arg name="visibility" type="b"/>
+    </signal>
+  </interface>
+</node>
