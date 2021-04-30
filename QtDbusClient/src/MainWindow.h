@@ -33,6 +33,6 @@ private:
 
 private:
     Ui::MainWindow * ui;
-    QDBusServiceWatcher * m_serviceWatcher;
-    AeroIansControlIndicatorRouteVisibility1Interface * m_routeVisibilityInterface;
+    QDBusServiceWatcher * m_serviceWatcher{ nullptr };
+    AeroIansControlIndicatorRouteVisibility1Interface * m_routeVisibilityInterface{ nullptr };
 };
